@@ -25,7 +25,11 @@ public class Calculator
 				System.out.println(x*y);
 				break;
 			case 4:
-				System.out.println(x/y);
+				if(y==0)
+				{
+					System.out.println("Error:Divide by Zero");
+				}
+				else System.out.println(x/y);
 				break;
 			default:
 				System.out.println("Invalid response");
